@@ -39,7 +39,7 @@ permalink: '/'
                     <img src="{{ post.image }}" class="blog-image"/>
                   {% endif %}
 
-                  <p>
+                  <p class="blog-content">
                     {{ post.date | date: "%d %B %Y" }}
                     {{ post.content | truncatehtml | truncatewords: 20 }}
                     <a href="{{ post.url }}" target="_blank">Read More <span>&#8599;</span> </a>
