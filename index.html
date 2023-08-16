@@ -1,0 +1,73 @@
+---
+layout: null
+permalink: '/'
+---
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li><a class="text">blog</a></li>
+        <li><a class="text">resources</a></li>
+      </ul>
+    </nav>
+    <div id="main-body">
+      <section id="title">
+        <div id="title-text-block">
+            <p id="title-text">We are CAMS CSC</p>
+            <p class="subtitle">Computer Science Cybersecurity Club</p>
+        </div>  
+        <img id="camscsc-logo" src="./assets/img/csc-logo.png"/>
+      </section>
+  
+      <section id="recent-posts">
+          <p class="subtitle">Recent Posts</p>
+          <!-- Should make a jekyll thing where posts only first 2 posts -->
+          <div>
+              {% for post in site.posts limit:2 %}
+              <div>
+                  <p class="blog-title">{{ post.title }}</p>
+                  <p class="text">{{ post.date | date: "%d %B %Y" }}</p>
+                  <p class="text">{{ post.content | truncatehtml | truncatewords: 20 }}</p>
+              </div>
+              {% endfor %}
+          </div>
+      </section>
+  
+    <section id="About">
+      <p class="subtitle">About</p>
+      <p class="text">
+        We meet at Room 5026, Sunday every week.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+      <img id="github-logo"/>  
+      <img id="discord-logo"/>  
+      <img id="instagram-logo"/>  
+    </section>
+    
+    <section id="Contact">
+      <p class="subtitle">Contact</p>
+      <p class="text">
+        You can get the latest announcements and ask questions at our discord server.
+        For formal inquiries, contact us at camscsc@gmail.com. 
+      </p>
+    </section>
+  
+    <footer>
+      <p id="footer-text" class="text">
+        This website is based on Jekyll - check our Github Repo and blog post for more details!
+      </p>
+      <img id="hackclub-logo"/>
+    </footer>
+  
+
+    </div>
+  </body>
+</html>
