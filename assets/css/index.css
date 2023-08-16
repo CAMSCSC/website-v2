@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
 
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
 nav {
     position: fixed;
     top: 0;
@@ -12,6 +21,10 @@ body {
     margin: 0;
     color: white;
     background-color: black;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    font-size: 1.5em;
 }
 
 #main-body {
@@ -38,11 +51,18 @@ li a {
 }
 
 #title-text {
-    font-size: 7em
+    font-size: 5em;
+    font-weight:normal;
 }
 
 .subtitle {
-    font-size: 2.5em;
+    font-weight:normal;
+    font-size: 3em;
+}
+
+#title-subtext {
+    font-weight:normal;
+    font-size: 2em;
 }
 
 .text {
@@ -50,6 +70,7 @@ li a {
 }
 
 .blog-title {
+    font-weight:normal;
     font-size: 2em;
 }
 
@@ -58,4 +79,23 @@ li a {
     width: 100 vw;
     display: flex;
     align-items: center;
+}
+
+.blog-image {
+    max-height: 50%;
+}
+
+.post {
+    width: 50%;
+}
+
+#post-preview {
+    display: flex;
+    width: 100%;
+    
+}
+
+.nav-link {
+    color: inherit;
+    text-decoration: none;
 }
