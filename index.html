@@ -12,12 +12,8 @@ permalink: '/'
   </head>
 
   <body>
-    <nav>
-      <ul>
-        <li><a href="{{ '/blog' | relative_url}}" class="nav-link">blog</a></li>
-        <li><a href="{{ '/resources' | relative_url}}" class="nav-link">resources</a></li>
-      </ul>
-    </nav>
+    {% include navbar.html %}
+
     <div id="main-body">
       <section id="title">
         <div id="title-text-block">
@@ -67,12 +63,7 @@ permalink: '/'
           For formal inquiries, contact us at camscsc@gmail.com. 
         </p>
       </section>
-    </div>  
-    <footer>
-      <p id="footer-text">
-        This website is based on Jekyll - check our Github Repo and blog post for more details!
-      </p>
-      <img id="hackclub-logo" src="./assets/img/flag-standalone.png"/>
-    </footer>
+    </div>
+    {% include footer.html %}
   </body>
 </html>
