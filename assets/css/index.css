@@ -103,3 +103,15 @@ li a {
 section {
     padding-bottom: 10vh;
 }
+
+footer {
+    background-color: rgb(37,37,37);
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#hackclub-logo {
+    height: 8vh;
+}
