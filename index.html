@@ -14,8 +14,8 @@ permalink: '/'
   <body>
     <nav>
       <ul>
-        <li><a href="/blog" class="nav-link">blog</a></li>
-        <li><a href="/resources" class="nav-link">resources</a></li>
+        <li><a href="{{ '/blog' | relative_url}}" class="nav-link">blog</a></li>
+        <li><a href="{{ '/resources' | relative_url}}" class="nav-link">resources</a></li>
       </ul>
     </nav>
     <div id="main-body">
@@ -42,7 +42,7 @@ permalink: '/'
                   <p class="blog-content">
                     {{ post.date | date: "%d %B %Y" }}
                     {{ post.content | truncatehtml | truncatewords: 20 }}
-                    <a href="{{ post.url }}" target="_blank">Read More <span>&#8599;</span> </a>
+                    <a href="{{ post.url | relative_url }}" target="_blank">Read More <span>&#8599;</span> </a>
                   </p>
               </div>
               {% endfor %}
