@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: null
 title:  "First Post"
 date:   2023-08-14 06:12:16 -0700
 categories: jekyll update
