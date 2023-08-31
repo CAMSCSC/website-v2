@@ -56,7 +56,7 @@ li a {
 
 .subtitle {
     font-weight:normal;
-    font-size: 3em;
+    font-size: 2em;
 }
 
 #title-subtext {
@@ -102,4 +102,31 @@ li a {
 
 section {
     padding-bottom: 10vh;
+}
+
+footer {
+    background-color: rgb(37,37,37);
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#hackclub-logo {
+    height: 8vh;
+}
+
+#footer-text {
+    padding-left: 5%
+}
+
+#nav-csc-logo {
+    height: 10vh;
+    display: inline;
+}
+
+#blog-title {
+   text-align: center;
+   padding-top: 10%; 
+   padding-bottom: 5%;
 }
